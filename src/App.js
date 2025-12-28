@@ -28,11 +28,11 @@ function App() {
           <h2>{lesson.title}</h2>
           <p>{lesson.content}</p>
 
-          {lesson.questions.map((q, i) => (
+          {lesson.questions?.map((q, i) => (
             <div key={i}>
               <strong>{q.prompt}</strong>
               <ul>
-                {q.options.map(opt => (
+                {q.options?.map(opt => (
                   <li key={opt}>{opt}</li>
                 ))}
               </ul>
