@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://YOUR-BACKEND-URL.onrender.com/api/lessons")
+    fetch("https://english-learning-backend-3l57.onrender.com/api/lessons")
       .then(res => res.json())
       .then(data => {
         setLessons(data);
